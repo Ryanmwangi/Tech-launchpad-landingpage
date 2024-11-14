@@ -1,5 +1,5 @@
 import express from 'express';
-import { submitToListmonk } from './formHandler.js'; // Import the form handler
+import { submitToListmonk } from './formHandler';
 
 const router = express.Router();
 
