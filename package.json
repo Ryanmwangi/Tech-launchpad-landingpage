@@ -1,5 +1,5 @@
 {
-  "name": "techlaunchpad",
+  "name": "progodyssey",
   "version": "1.0.0",
   "description": "progodyssey's landing page",
   "main": "form-handler.js",
@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "progodyssey": "file:"
   }
 }
