@@ -23,11 +23,14 @@ header {
     color: #fff;
     padding: 60px 0;
     text-align: center;
+    display: flex;
+    align-items: center; /* Center vertically */
 }
 
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    flex-grow: 1; /* Make the title expand to fill available space */
 }
 
 header p {
@@ -49,14 +52,28 @@ header .cta-button:hover {
 }
 
 .logo-container {
-    position: absolute;
-    top: 60px;
-    left: 10px;
+    display: flex; /* Use a flex container for better layout */
+    align-items: center;
+    
+   
 }
 
 .logo {
     max-width: 150px;
     height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .logo-container {
+        margin-bottom: 20px; /* Move logo below the title */
+        margin-left: 35%;
+    }
 }
 
 /* Sections */

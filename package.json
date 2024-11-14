@@ -1,0 +1,18 @@
+{
+  "name": "techlaunchpad",
+  "version": "1.0.0",
+  "description": "progodyssey's landing page",
+  "main": "form-handler.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "ryan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2"
+  }
+}
