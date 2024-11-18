@@ -1,5 +1,3 @@
----
-
 # Progodyssey Traineeship Program
 
 Welcome to the Progodyssey Traineeship Program! This project serves as the web application for managing applications to the Progodyssey Traineeship Program, where aspiring IT professionals can apply for the program, learn, and grow in the tech industry.
@@ -59,8 +57,8 @@ Example `.env` file:
 
 ```
 LISTMONK_URL=https://your-listmonk-instance.com/api/subscribers
-API_KEY=your-api-key-here
-LIST_ID=your-list-id-here
+LISTMONK_USERNAME=listmonk-username
+LISTMONK_PASSWORD=listmonk-password
 PORT=3002
 ```
 
@@ -94,5 +92,3 @@ If you'd like to contribute to the project, follow these steps:
 3. Make your changes and commit them (`git commit -am 'Add new feature'`)
 4. Push to your forked repository (`git push origin feature-name`)
 5. Submit a pull request
-
----
