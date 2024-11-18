@@ -2,8 +2,11 @@ import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path'; // Import the path module
 import routes from './src/routes.js'; // Import routes from routes.js
+import { validateEnvVariables } from './src/envValidator.js';
 
 dotenv.config();
+
+validateEnvVariables();
 
 const app = express();
 const PORT = process.env.PORT || 3002;
