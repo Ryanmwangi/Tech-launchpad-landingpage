@@ -59,6 +59,7 @@ Example `.env` file:
 LISTMONK_URL=https://your-listmonk-instance.com/api/subscribers
 LISTMONK_USERNAME=listmonk-username
 LISTMONK_PASSWORD=listmonk-password
+LIST_ID=listmonk-listid
 PORT=3002
 ```
 
