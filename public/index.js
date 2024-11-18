@@ -29,8 +29,8 @@ document.getElementById('applicationForm').addEventListener('submit', function(e
     })
     .then(result => {
         console.log('Success:', result);
-        responseMessage.textContent = 'Thank you for your application!';
-        responseMessage.className = 'success';
+        const formContainer = document.getElementById('applicationForm');
+        formContainer.innerHTML = '<h2>Thank you for your application!</h2>';
     })
     .catch(error => {
         console.error('Error:', error);
