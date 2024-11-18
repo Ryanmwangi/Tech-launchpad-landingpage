@@ -150,3 +150,18 @@ footer {
 footer p {
     font-size: 0.9rem;
 }
+
+/*response messages*/
+
+#responseMessage {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#responseMessage.success {
+    color: green;
+}
+
+#responseMessage.error {
+    color: red;
+}
