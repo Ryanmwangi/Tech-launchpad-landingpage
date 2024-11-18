@@ -8,17 +8,18 @@ export async function submitToListmonk(req, res) {
     const listmonkUrl = process.env.LISTMONK_URL;
     const listmonkUsername = process.env.LISTMONK_USERNAME;
     const listmonkPassword = process.env.LISTMONK_PASSWORD;
-
+    
     // Encode username and password as base64
     const auth = Buffer.from(`${listmonkUsername}:${listmonkPassword}`).toString('base64');
 
+    const listId = parseInt(process.env.LIST_ID, 10);
     
     console.log(`Sending request to Listmonk with URL: ${listmonkUrl}`);
 
     const payload = {
         email,
         name,
-        lists: [process.env.LIST_ID],
+        lists: [listId],
         fields: { message }
     };
 
