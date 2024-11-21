@@ -79,6 +79,50 @@ The server will be available at `http://localhost:3002`.
 - Fill in the application form and submit.
 - Check your Listmonk instance to confirm that the form submission data is received and processed.
 
+## Building and Running with Docker
+
+### 1. Build the Docker Image
+
+Run the following command to build the Docker image:
+
+```bash
+docker build -t progodyssey-app .
+```
+
+### 2. Run the Docker Container
+
+To start the container, use:
+
+```bash
+docker run -d --name progodyssey -p 3002:3002 --env-file .env progodyssey-app
+```
+
+This maps the container's port `3002` to the host system's port `3002` and uses the `.env` file for environment variables. The application will be accessible at [http://localhost:3002](http://localhost:3002).
+
+### 3. Using Docker Compose (Optional)
+
+If you prefer to use Docker Compose, ensure you have a `docker-compose.yml` file in your project directory. Then, run:
+
+```bash
+docker-compose up -d
+```
+
+This will automatically build and start the container based on the configuration in the `docker-compose.yml` file.
+
+### 4. Stopping the Docker Container
+
+To stop the running container, use:
+
+```bash
+docker stop progodyssey
+```
+
+To remove the container:
+
+```bash
+docker rm progodyssey
+```
+
 ## Routes
 
 - **GET /**: Serves the landing page (`index.html`).
